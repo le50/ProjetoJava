@@ -4,19 +4,17 @@ public class ClassePrincipal {
 	// Método chamado main
 	public static void main(String[] args) {
 
-		String nome = "Mikael";
+		ClasseAlunos mikaelObj = new ClasseAlunos(); // Objeto 1
+		ClasseAlunos abraaoObj = new ClasseAlunos(); // Objeto 2
 		
-		System.out.print(nome); // sysout, CRT + SPACE
+		mikaelObj.nomeAt = "Mikael";
+		mikaelObj.cursoAt = "Infomatica";
+		mikaelObj.notaAt = 8.5F;
 		
-		// Usar ClassePessoas
-		ClassePessoas alunoObj = new ClassePessoas(); // Crie um objeto
-										
-		// instanciei Classe Pessoa
-		alunoObj.nomeAt = "Luiz";
-		alunoObj.rendaAt = 15_000;
 		
-		System.out.println(alunoObj.nomeAt);
-		System.out.println(alunoObj.rendaAt);
+		System.out.println(mikaelObj.nomeAt); // sysout CTR + SPACE
+		System.out.println(mikaelObj.cursoAt);
+		System.out.println(mikaelObj.notaAt);
 		
 	}
 
